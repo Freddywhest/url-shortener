@@ -1,0 +1,30 @@
+{
+    "name": "roddy/url-shortener",
+    "description": "A Laravel package for creating shortened URLs with QrCode for your web apps.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/Freddywhest/url-shortener",
+    "autoload": {
+        "psr-4": {
+            "Roddy\\UrlShortener\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alfred Nti",
+            "email": "alfrednti5000@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "chillerlan/php-qrcode": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Roddy\\UrlShortener\\UrlShortenerProvider"
+            ]
+        }
+    }
+}
